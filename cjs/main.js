@@ -1,9 +1,11 @@
 // main.js
+var {foo:foo1,counter:counter1, bar: bar1} = require('./lib');
 var mod = require('./lib');
 
-console.log(mod.counter);  // 3
+// CommonJS 模块里的：基本类型都是值的拷贝, 引用类型是值的引用
+console.log(mod.counter, counter1, mod.foo, foo1, mod.bar, bar1);  // 3 3 3 3 { baz: 0 } { baz: 0 }
 mod.incCounter();
-console.log(mod.counter); // 3
+console.log(mod.counter, counter1, mod.foo, foo1, mod.bar, bar1); // 4 3 3 3 { baz: 1 } { baz: 1 }
 
 /**
  * ES6 模块与 CommonJS 模块的差异

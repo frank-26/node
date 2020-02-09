@@ -1,5 +1,5 @@
 // main.js
-import { counter, incCounter,o } from './lib';
+import { counter, incCounter} from './lib.mjs';
 console.log(counter); // 3
 
 incCounter();
@@ -13,5 +13,5 @@ console.log(counter); // 4
 
 
 // main.js
-import './x';
-import './y';
+import './x.mjs';
+import './y.mjs';
