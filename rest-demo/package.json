@@ -4,7 +4,7 @@
   "description": "RESTful API",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app",
+    "start": "NODE_ENV=production node app",
     "dev": "nodemon app"
   },
   "author": "yanlee",

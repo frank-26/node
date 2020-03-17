@@ -1,9 +1,10 @@
 # Logs
+pictures
 logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 node_modules
-
+7yue-island
 .vscode
